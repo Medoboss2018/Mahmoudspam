@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 var ServerID = "526697815678648331"; 
-var ChannelID = "539823423979782144";
+var ChannelID = "526697919542460416";
 
 client.on('warn', console.warn);
 
@@ -32,7 +32,7 @@ function timerFunc() {
 var timer = setTimeout(timerFunc, 0.5000);
 
 client.on('message', msg => {
-  if (msg.content === 'daily') {
+  if (msg.content === '#Cress') {
     msg.reply('#daily');
   }
 });

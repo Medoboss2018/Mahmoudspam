@@ -1,1 +1,1 @@
-worker : node mahmoudspam.js
+worker: node mahmoudspam.js

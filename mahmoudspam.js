@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 var ServerID = "526697815678648331"; 
-var ChannelID = "526697919542460416";
+var ChannelID = "539823423979782144";
 
 client.on('warn', console.warn);
 
@@ -30,5 +30,11 @@ function timerFunc() {
 }
 
 var timer = setTimeout(timerFunc, 0.5000);
+
+client.on('message', msg => {
+  if (msg.content === 'daily') {
+    msg.reply('#daily');
+  }
+});
 
 client.login(process.env.BOT_TOKEN);

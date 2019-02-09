@@ -31,10 +31,4 @@ function timerFunc() {
 
 var timer = setTimeout(timerFunc, 0.5000);
 
-client.on('message', msg => {
-  if (msg.content === '#Cress') {
-    msg.reply('#daily');
-  }
-});
-
 client.login(process.env.BOT_TOKEN);
